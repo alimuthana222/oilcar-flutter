@@ -1,0 +1,70 @@
+name: oilcar_flutter
+description: A comprehensive car oil guide Flutter application for Arabic and international markets.
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: '>=3.0.0 <4.0.0'
+  flutter: ">=3.16.0"
+
+dependencies:
+  flutter:
+    sdk: flutter
+  
+  # State Management
+  get: ^4.6.6
+  
+  # Network & API
+  dio: ^5.4.0
+  http: ^1.1.2
+  
+  # Database
+  supabase_flutter: ^2.0.0
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+  
+  # Camera & Image Processing
+  camera: ^0.10.5+7
+  image_picker: ^1.0.4
+  google_ml_kit: ^0.16.0
+  
+  # UI & Icons
+  cupertino_icons: ^1.0.2
+  google_fonts: ^6.1.0
+  flutter_svg: ^2.0.9
+  
+  # Utilities
+  intl: ^0.19.0
+  path_provider: ^2.1.1
+  permission_handler: ^11.0.1
+  url_launcher: ^6.2.1
+  share_plus: ^7.2.1
+  pdf: ^3.10.7
+  
+  # Localization
+  flutter_localizations:
+    sdk: flutter
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^3.0.0
+  hive_generator: ^2.0.1
+  build_runner: ^2.4.7
+
+flutter:
+  uses-material-design: true
+  generate: true
+  
+  assets:
+    - assets/images/
+    - assets/icons/
+    - assets/data/
+    
+  fonts:
+    - family: Cairo
+      fonts:
+        - asset: assets/fonts/Cairo-Regular.ttf
+        - asset: assets/fonts/Cairo-Bold.ttf
+          weight: 700
