@@ -1,5 +1,7 @@
 import '../../domain/entities/car_info.dart';
 
+// VIN Response Models for NHTSA API
+
 class CarInfoModel extends CarInfo {
   const CarInfoModel({
     super.vin,
