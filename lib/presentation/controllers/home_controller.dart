@@ -1,49 +1,25 @@
 import 'package:get/get.dart';
 import 'package:flutter/material.dart';
+import '../pages/vin_scanner_page.dart';
+import '../pages/manual_input_page.dart';
 
 class HomeController extends GetxController {
   void navigateToVinScanner() {
-    // TODO: Navigate to VIN scanner page
-    Get.snackbar(
-      'قريباً',
-      'سيتم إضافة مسح VIN قريباً',
-      backgroundColor: Colors.orange,
-      colorText: Colors.white,
-      snackPosition: SnackPosition.BOTTOM,
-    );
+    Get.to(() => const VinScannerPage());
   }
   
   void navigateToImagePicker() {
-    // TODO: Navigate to image picker page
-    Get.snackbar(
-      'قريباً',
-      'سيتم إضافة اختيار الصور قريباً',
-      backgroundColor: Colors.orange,
-      colorText: Colors.white,
-      snackPosition: SnackPosition.BOTTOM,
-    );
+    // Use the same VIN scanner page but trigger image picker
+    Get.to(() => const VinScannerPage());
   }
   
   void navigateToManualVin() {
-    // TODO: Navigate to manual VIN input page
-    Get.snackbar(
-      'قريباً',
-      'سيتم إضافة إدخال VIN يدوياً قريباً',
-      backgroundColor: Colors.orange,
-      colorText: Colors.white,
-      snackPosition: SnackPosition.BOTTOM,
-    );
+    // Navigate to manual input page with VIN focus
+    Get.to(() => const ManualInputPage());
   }
   
   void navigateToManualInput() {
-    // TODO: Navigate to manual car details input page
-    Get.snackbar(
-      'قريباً',
-      'سيتم إضافة إدخال تفاصيل السيارة قريباً',
-      backgroundColor: Colors.orange,
-      colorText: Colors.white,
-      snackPosition: SnackPosition.BOTTOM,
-    );
+    Get.to(() => const ManualInputPage());
   }
   
   void navigateToHistory() {

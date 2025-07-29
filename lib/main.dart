@@ -8,6 +8,7 @@ import 'core/constants/app_colors.dart';
 import 'core/constants/supabase_config.dart';
 import 'core/utils/app_localizations.dart';
 import 'presentation/pages/home_page.dart';
+import 'presentation/pages/results_page.dart';
 import 'core/network/api_client.dart';
 import 'core/network/network_info.dart';
 import 'data/datasources/vin_api_datasource.dart';
@@ -107,6 +108,12 @@ class MyApp extends StatelessWidget {
       
       // Routes
       home: const HomePage(),
+      getPages: [
+        GetPage(
+          name: '/results',
+          page: () => const ResultsPage(),
+        ),
+      ],
       
       // Error builder
       builder: (context, child) {
